@@ -1,0 +1,227 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Ensure the map container is centered */
+  #chartdiv {
+    width: 40%; /* Adjust as needed */
+    height: 50vh; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 5rem; /* Added margin-top for spacing */
+    /* border-bottom: 2px solid #000; Optional border */
+  }
+
+
+/* Table Section */
+.table-section {
+    padding: 0.5rem 0.5rem; /* Further reduce padding */
+    background-color: #f9f9f9;
+}
+
+.table-container {
+    max-width: 1000px; /* Reduce max-width for a tighter layout */
+    margin: auto;
+    text-align: center;
+}
+
+.table-container h2, .table-container h3 {
+    font-size: 2rem; /* Further reduce font size */
+    margin-bottom: 2rem; /* Reduce margin bottom */
+}
+
+.table-container h3 {
+    font-size: 1.8rem; /* Further reduce font size */
+    margin-top: 5rem; /* Reduce margin top */
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.continent-icon {
+    width: 50px; /* Further reduce icon size */
+    height: 50px; /* Further reduce icon size */
+    margin-right: 5px; /* Reduce margin */
+    margin-bottom: 2rem;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-bottom: 1rem; /* Reduce margin bottom */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Less shadow */
+
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+thead th {
+    padding: 0.6rem; /* Further reduce padding */
+    font-size: 0.9rem; /* Further reduce font size */
+}
+
+tbody td {
+    padding: 0.6rem; /* Further reduce padding */
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+tbody td {
+    font-size: 0.9rem; /* Keep as is for readability */
+}
+
+.flag {
+    width: auto; /* Maintain aspect ratio */
+    height: 18px; /* Set a fixed height */
+    max-width: 100%; /* Ensure flags fit within table cells */
+}
+
+/* Style for clickable rows */
+a.clickable-row {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.clickable-row:hover {
+    background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+/* Ensure links fill the table cell */
+tbody td a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0.6rem; /* Further reduce padding */
+    box-sizing: border-box; /* Ensures padding does not affect width */
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 0.5rem; /* Reduce margin bottom */
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Less shadow */
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem; /* Further reduce padding */
+        border: none;
+        font-size: 0.8rem; /* Reduce font size */
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+
+  
+/* Header styles */
+.site-header {
+    background-color: #f9f9f9; /* White background */
+    color: #333; /* Dark text color for contrast */
+    padding: 1rem 2rem; /* Adjust padding for better spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between logo and nav */
+    border-bottom: none; /* No border */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between logo and nav */
+    max-width: 1200px; /* Ensure content does not stretch too much */
+    margin: 0 auto; /* Center the content horizontally */
+    width: 100%;
+}
+
+.logo-placeholder {
+    flex: 1;
+    text-align: left; /* Align logo to the left */
+}
+
+.logo {
+    height: 50px; /* Adjust the logo size */
+    margin-right: 2rem; /* Add some space between logo and text */
+}
+
+.header-text {
+    flex: 2;
+    text-align: center; /* Center the main text */
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+}
+
+.header-nav {
+    flex: 1; /* Allow nav to take up remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 2rem; /* Increase gap between buttons for more spacing */
+}
+
+.nav-button {
+    background-color: #f9f9f9; /* White background */
+    color: #333; /* Dark text color */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    color: #333; /* Dark text color */
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #f9f9f9; /* White background */
+    color: #333; /* Dark text color */
+    text-align: center;
+    padding: 1rem;
+    border-top: none; /* No border */
+}
+

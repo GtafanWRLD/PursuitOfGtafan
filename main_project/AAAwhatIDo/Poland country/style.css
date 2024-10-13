@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 50vh;
+    background: url('img/szczecin.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.hero-logo img {
+    height: 50px; /* Adjust as needed */
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.hero-buttons {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-buttons .btn {
+    background: transparent;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #868686;
+    color: #333;
+}
+
+/* Info Sections */
+.info-section {
+    padding: 3rem 1.5rem;
+    background: #fff;
+    margin-top: 2rem;
+}
+
+.info-section .content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+}
+
+/* Places Grid */
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.place {
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+}
+
+.place img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.place h3 {
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+    color: #e67e22;
+}
